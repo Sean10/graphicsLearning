@@ -6,8 +6,16 @@
 显示一个bmp文件的C程序，并实现图像亮度、对比度调整、图像平移、放大、旋转和镜像。
 
 
-## 环境：
+## 环境依赖：
 * openCV
+```
+opengl 编译 opentest.cc
+clang++ open_test.cc -o gl_test -framework OpenGL -framework GLUT
+
+#opencv 编译 test_cv.cc
+clang++ $(pkg-config --cflags --libs opencv) test_cv.cc -o test_cv
+```
+
 
 .
 ├── README.md
